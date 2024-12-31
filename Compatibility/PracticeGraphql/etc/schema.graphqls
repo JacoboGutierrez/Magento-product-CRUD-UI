@@ -1,0 +1,12 @@
+type Query {
+    blogDetails (
+        blog_id: Int @doc(description: "Search Docs List.")
+    ): BlogDetails @resolver(class: "Compatibility\\PracticeGraphql\\Model\\Resolver\\BlogDetails") @doc(description: "Return details about a Blog Details.")
+}
+type BlogDetails {
+    fitbuild_id: Int @doc(description: "The ID of a fit build.")
+    name: String @doc(description: "The Holster name.")
+    holster_sku: String @doc(description: "Holster SKU.")
+    compatible_sku: String @doc(description: "Accesory SKU")
+    status: Int @doc(description: "Builder Status")
+}

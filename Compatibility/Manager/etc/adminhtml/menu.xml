@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Compatibility_Manager::customblog" title="Fit Builder" module="Compatibility_Manager" sortOrder="51" resource="Compatibility_Manager::customblog"/>
+        <add id="Compatibility_Manager::post" title="Manage Compatibles" module="Compatibility_Manager" sortOrder="10" action="customblog/post" resource="Compatibility_Manager::post" parent="Compatibility_Manager::customblog"/>
+    </menu>
+</config>
